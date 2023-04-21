@@ -109,8 +109,8 @@ h2{
 }
 
 .card img{
-    height: 400px;
-    width:  400px;
+    height: 350px;
+    width:  350px;
 }
 
 .game-container{
@@ -119,13 +119,12 @@ h2{
     align-items: center;
     gap: 35px;
     padding-bottom: 100px;
-    border-bottom: black 1.5px solid;
 }
 
 .game{
     display: flex;
     flex-direction: column;
-    border: red 2px solid;
+    border: rgb(0, 0, 0) 2px solid;
     border-radius: 8px;
     transition: 0.35s;
     background-color: rgb(169, 236, 186);
@@ -136,8 +135,35 @@ h2{
 }
 
 .game img{
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
+}
+
+.cv-container{
+    border-bottom: black 1.5px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding-bottom: 100px;
+}
+
+.cv-card{
+    display: flex;
+    flex-direction: column;
+    border: rgb(0, 0, 0) 2px solid;
+    border-radius: 8px;
+    transition: 0.35s;
+    background-color: rgb(169, 236, 186);
+}
+
+.cv-card:hover{
+    transform: scale(1.1);
+}
+
+.cv-card img{
+    height: 350px;
+    width: 350px;
 }
 
 .livre-dor{
@@ -226,3 +252,75 @@ input[type=text], select, textarea {
 .description p{
     font-size: 24px;
 }
+.cv-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+  }
+  
+.cv-accroche{
+    text-align:center;
+  }
+.cv-page-container a{
+    text-decoration:none;
+    margin: auto;
+}
+.carre-container{
+    width:100%;
+    padding-top: 100px;
+}
+.carre{
+    border: 2px black solid;
+    border-radius: 10px;
+    width: 77%;
+    background-color: rgb(247, 248, 238) ;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.text-carre{
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.carre:hover{
+    transform: scale(1.05);
+}
+
+.carre:hover h2 {
+    position: relative;
+  }
+  
+  .carre h2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .carre h2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transform-origin: left;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .carre:hover h2:after {
+    width: 100%;
+}
+
+.img-meme{
+    width: 100%;
+    text-align: center;
+
+}
+  
+.challenge{
+    margin-left: 25px;
+}
+
+
