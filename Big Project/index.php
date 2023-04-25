@@ -10,31 +10,62 @@
 </head>
 
 <body>
-    <?php require "items/navbar.php"?>
-
+    <div class="navbar">
+        <div class="navbar-content">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Projets</a></li>
+                <li><a href="#">CV</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Jeu 1</a></li>
+                <li><a href="#">Jeu 2</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="navbar-tel">
+        <div class="navbar-content-tel">
+            <span id="navbar-logo-tel">logo</span>
+            <div id="nav-dropdown" class="navbar-links-tel">
+                <a href="index.html">Accueil</a>
+                <a href="projects.html">Projets</a>
+                <a href="cv.html">CV</a>
+                <a href="#">Contact</a>
+                <a href="#">Jeu 1</a>
+                <a href="#">Jeu 2</a>
+            </div>
+            <a class="dropbtn" href="javascript:void(0);" onclick="dropnav()">
+                <span class="material-symbols-outlined">menu</span>
+            </a>
+        </div>
+    </div>
     <div class="container">
         <div class="pres-site">
             <h1>Un super site</h1>
             <p>Petite description</p>
         </div>
         <h2 class="page-title">Projets</h2>
-        <?php
-            $sql = "SELECT * FROM projets";
-            $pre = $pdo->prepare($sql);
-            $pre->bindParam("id_projet",$_GET['id_projet']);
-            $pre->execute();
-            $projets = $pre->fetchAll(PDO::FETCH_ASSOC);
-        ?>    
         <div class="card-container">
-        <?php foreach ($projets as $projet): ?>
             <div class="card">
-                <a href="projects.php">
+                <a href="projects.html">
                     <img src="img/singe.jpg" alt="singe">
-                    <h3><?php echo $projet['nom_projet']?></h3>
-                    <p><?php echo $projet['pres_projet']?></p>
+                    <h3>Titre carte</h3>
+                    <p>presentation carte</p>
                 </a>
             </div>
-            <?php endforeach; ?>
+            <div class="card">
+                <a href="projects.html">
+                    <img src="img/singe.jpg" alt="singe">
+                    <h3>Titre carte</h3>
+                    <p>presentation carte</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="projects.html">
+                    <img src="img/julie.jpg" alt="singe">
+                    <h3>Titre carte</h3>
+                    <p>presentation carte</p>
+                </a>
+            </div>
         </div>
         <h2 class="page-title">Jeux</h2>
         <div class="game-container">
@@ -66,7 +97,7 @@
 
         </div>
         
-        <div id='ellivro' class="livre-dor">
+        <div class="livre-dor">
             <h2>Laissez un avis !</h2>
             <div class="livre-dor-content">
                 <form action="action_page.php">        
@@ -88,7 +119,7 @@
         </div>
     </div>
 
-<!--  hidden.php   -->
+<!--  hidden.html   -->
 
     <script src="js/style.js"></script>
 
