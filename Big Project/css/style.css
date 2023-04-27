@@ -6,7 +6,7 @@ body{
 }
 .navbar{
     display: none;
-    background-color: rgb(255, 217, 0);
+    background-color: #B3F5BC;
 }
 
 .sticky {
@@ -324,3 +324,23 @@ input[type=text], select, textarea {
 }
 
 
+@media screen and (min-width: 790px) {
+    .navbar-tel{
+        display: none;
+    }
+    .navbar{
+        display: block;
+        width: 100%;
+    }
+    .navbar-content-box {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .navbar-content {
+        width: 75%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      
+}

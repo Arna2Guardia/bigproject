@@ -11,34 +11,8 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="navbar-content">
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">CV</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Jeu 1</a></li>
-                <li><a href="#">Jeu 2</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="navbar-tel">
-        <div class="navbar-content-tel">
-            <span id="navbar-logo-tel">logo</span>
-            <div id="nav-dropdown" class="navbar-links-tel">
-                <a href="index.html">Accueil</a>
-                <a href="projects.html">Projets</a>
-                <a href="cv.html">CV</a>
-                <a href="#">Contact</a>
-                <a href="#">Jeu 1</a>
-                <a href="#">Jeu 2</a>
-            </div>
-            <a class="dropbtn" href="javascript:void(0);" onclick="dropnav()">
-                <span class="material-symbols-outlined">menu</span>
-            </a>
-        </div>
-    </div>
+    <?php require "items/navbar.php"?>
+    
     <div class="cv-page-container">
         <h1>Lucas Durand</h1>
         <p class="cv-accroche">"Je suis Lucas Durand, j'ai 22ans et je suis en première année de bachelor développeur informatique option cybersécurité a Guardia."</p>
